@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+package first;
+
+service Conversation {
+	rpc Answer (AskMessage) returns (AnswerMessage);
+}
+
+message AskMessage {
+	string text = 1; 
+}
+
+message AnswerMessage {
+	string text = 1; 
+}
+
+
