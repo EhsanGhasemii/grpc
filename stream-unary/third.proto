@@ -1,0 +1,16 @@
+syntax = "proto3";
+
+package third; 
+
+
+service ListenTheMusic {
+	rpc Listen (stream MusicRequest) returns (MusicResponse);
+}
+
+message MusicRequest {
+	bytes audio = 1; 
+}
+
+message MusicResponse {
+	string response = 1; 
+}
