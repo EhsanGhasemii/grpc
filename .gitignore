@@ -1,2 +1,6 @@
-// data files
+# data files
 data
+
+
+# python directories
+__pycache__

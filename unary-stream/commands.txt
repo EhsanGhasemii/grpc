@@ -1,0 +1,5 @@
+```bash
+docker build -t playmusic-server .
+docker run -d -p 10000:10000 --name playmusic-server playmusic-server
+docker rm -f playmusic-server
+```
